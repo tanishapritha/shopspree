@@ -1,12 +1,27 @@
-import React from 'react'
-import './Navbar.css'
-import GiShoppingBag from "react-icons/gi";
+// filepath: /C:/Users/tprit/Documents/GitHub/shopspree/frontend/src/Components/Navbar/Navbar.js
+import React, { useState } from 'react';
+import './Navbar.css';
+import { FaBars } from 'react-icons/fa';
 
 const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleNavbar = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
-    <nav>
-      {/* Navbar content */}
-    </nav>
+    <div>
+      <FaBars className="menu-icon" onClick={toggleNavbar} />
+      <nav className={`navbar ${isOpen ? 'open' : ''}`}>
+        <ul className="navbar-menu">
+          <li className="navbar-item"><a href="#appliances">APPLIANCES</a></li>
+          <li className="navbar-item"><a href="#clothes">CLOTHES</a></li>
+          <li className="navbar-item"><a href="#shoes">SHOES</a></li>
+          <li className="navbar-item"><a href="#edibles">EDIBLES</a></li>
+        </ul>
+      </nav>
+    </div>
   );
 };
 
