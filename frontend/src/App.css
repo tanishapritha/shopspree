@@ -36,3 +36,13 @@
     transform: rotate(360deg);
   }
 }
+
+.shopspree-header {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  padding: 20px;
+  background-color: #f8f9fa;
+  color: #343a40;
+  border-bottom: 2px solid #dee2e6;
+}
