@@ -1,70 +1,70 @@
-/* filepath: /C:/Users/tprit/Documents/GitHub/shopspree/frontend/src/Components/Navbar/Navbar.css */
 .menu-icon {
-    font-size: 2rem;
-    cursor: pointer;
-    position: fixed;
-    top: 20px;
-    left: 20px;
-    z-index: 1000;
-    color: #343a40;
-  }
-  
-  .navbar {
-    position: fixed;
-    top: 0;
-    left: -250px;
-    width: 250px;
-    height: 100%;
-    background-color: #343a40;
-    overflow: hidden;
-    transition: left 0.3s ease;
-    z-index: 999; 
-  }
-  
-  .navbar.open {
-    left: 0;
-  }
-  
-  .navbar-menu {
-    display: flex;
-    flex-direction: column;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    padding-top: 60px;
-  }
-  
-  .navbar-item {
-    padding: 14px 20px;
-    border-bottom: 1px solid #495057;
-  }
-  
-  .navbar-item a {
-    color: white;
-    text-decoration: none;
-    font-size: 1.2rem;
-    transition: color 0.3s;
-  }
-  
-  .navbar-item a:hover {
-    color: #f8f9fa;
-  }
+  font-size: 2rem;
+  cursor: pointer;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 1001; /* Ensure it is above the header */
+  color: #343a40;
+}
 
-  .logonavbar{
-    width: 110px;
-    height: 70px;
-    text-decoration: none;
-    color: white;
-    display: flex;
-    padding: 8px;
-    cursor: pointer;
-    &:hover{
-      border: 1px solid;
-      border-radius: 3px;
-    }
-  }
+.navbar {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 250px;
+  height: 100%;
+  background-color: #343a40;
+  overflow: hidden;
+  transition: left 0.3s ease;
+  z-index: 1000; /* Ensure it is above the header */
+}
 
-  .preshoppinglogo{
-    width: 97px;
-    height: 100%;
-  }
+.navbar.open {
+  left: 0;
+}
+
+.navbar-menu {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  padding-top: 60px;
+}
+
+.navbar-item {
+  padding: 14px 20px;
+  border-bottom: 1px solid #495057;
+}
+
+.navbar-item a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: color 0.3s;
+}
+
+.navbar-item a:hover {
+  color: #f8f9fa;
+}
+
+.logonavbar {
+  width: 110px;
+  height: 70px;
+  text-decoration: none;
+  color: white;
+  display: flex;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.logonavbar:hover {
+  border: 1px solid;
+  border-radius: 3px;
+}
+
+.preshoppinglogo {
+  width: 97px;
+  height: 100%;
+}
